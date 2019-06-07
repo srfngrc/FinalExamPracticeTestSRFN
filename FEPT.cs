@@ -12,7 +12,6 @@ namespace FinalExamPracticeTestPROJ
         {
             //Exercise 1
             //Console.WriteLine("The greatest number of the 3 entered is:" + getGreatestValueof3());
-            //Console.ReadLine();
 
             //Exercise Extra
             //isKnumbertheAddof2();
@@ -25,7 +24,6 @@ namespace FinalExamPracticeTestPROJ
 
             //Exercise 4
             printTableCharsASCII();
-
 
             //Exercise 5
             //int resultOfNumberOfChars;
