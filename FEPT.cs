@@ -144,20 +144,21 @@ namespace FinalExamPracticeTestPROJ
 
         static private void printTableCharsASCII()
         {
-            //string stringToConvert = "sdgdsfbvgdfvkluhdfvkjdfdn98798798";
+            string ArrayToPrint = "";
 
-            string DaniellaForPresidentOfCanada="";
-            //for (int i = 0; i <= 122; i++)
-            for (int i = 10; i <= 100; i++)
+            for (int j = 0; j < 122; j = j + 10)
             {
-                DaniellaForPresidentOfCanada = DaniellaForPresidentOfCanada + " " + (char)i;
-                
-                //System.Console.WriteLine("character {0}={1}", i, (char)i);
+                for (int i = j; i < j + 10; i++)
+                {
+                    ArrayToPrint = ArrayToPrint + "   " + (char)i;
+                }
+                //This is left: I have to replace the Escape Sequences. Missing
+                //ArrayToPrint.Replace('/', @'/');
+                Console.WriteLine(ArrayToPrint);
+                ArrayToPrint = "";
             }
-            Console.WriteLine(DaniellaForPresidentOfCanada);
-            // Convert the string into a byte[].
-            //byte[] asciiBytes = Encoding.ASCII.GetBytes(value);
-            //return "Daniella";
+
+
         }
         static private int CountNumberOfSpaces()
         {
