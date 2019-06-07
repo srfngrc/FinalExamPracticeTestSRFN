@@ -17,13 +17,13 @@ namespace FinalExamPracticeTestPROJ
             //isKnumbertheAddof2();
 
             //Exercise 2
-            //GetStudentsGrade();
+            GetStudentsGrade();
 
             //Exercise 3
             //CountTheNumberOfDigits();
 
             //Exercise 4
-            printTableCharsASCII();
+            //printTableCharsASCII();
 
             //Exercise 5
             //int resultOfNumberOfChars;
@@ -58,7 +58,8 @@ namespace FinalExamPracticeTestPROJ
 
         }
 
-        //Extra.Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+        //Extra.Given a list of numbers and a number k, return whether any two 
+        //numbers from the list add up to k.
         static private bool isKnumbertheAddof2()
         {
             int K = 17;
@@ -110,15 +111,15 @@ namespace FinalExamPracticeTestPROJ
             int AverageGrade;
 
             Console.WriteLine("Please enter the quiz score (0-100):");
-            int.TryParse(Console.ReadLine().ToString(), out grade1);
+            int.TryParse(Console.ReadLine(), out grade1);
             Console.WriteLine("");
 
             Console.WriteLine("Please enter the mid-term score (0-100):");
-            int.TryParse(Console.ReadLine().ToString(), out grade2);
+            int.TryParse(Console.ReadLine(), out grade2);
             Console.WriteLine("");
 
             Console.WriteLine("Please enter the final score (0-100):");
-            int.TryParse(Console.ReadLine().ToString(), out grade3);
+            int.TryParse(Console.ReadLine(), out grade3);
             Console.WriteLine("");
 
             AverageGrade = (grade1 + grade2 + grade3) / 3;
