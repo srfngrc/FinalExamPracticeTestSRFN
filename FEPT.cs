@@ -23,13 +23,18 @@ namespace FinalExamPracticeTestPROJ
             //Exercise 3
             //CountTheNumberOfDigits();
 
-            //Exercise 5
-            CountNumberOfSpaces();
-            Console.ReadLine();
+            //Exercise 4
+            printTableCharsASCII();
 
+
+            //Exercise 5
+            //int resultOfNumberOfChars;
+            //resultOfNumberOfChars = CountNumberOfSpaces();
+            
             //Exercise june6th
             //UberExercise();
 
+            Console.ReadLine();
             string sentence = Console.ReadLine();
         }
         //1.Implement a method that prompts the user to input three integer values and find the 
@@ -136,16 +141,40 @@ namespace FinalExamPracticeTestPROJ
             return 0;
         }
 
+
+        static private void printTableCharsASCII()
+        {
+            //string stringToConvert = "sdgdsfbvgdfvkluhdfvkjdfdn98798798";
+
+            string DaniellaForPresidentOfCanada="";
+            //for (int i = 0; i <= 122; i++)
+            for (int i = 10; i <= 100; i++)
+            {
+                DaniellaForPresidentOfCanada = DaniellaForPresidentOfCanada + " " + (char)i;
+                
+                //System.Console.WriteLine("character {0}={1}", i, (char)i);
+            }
+            Console.WriteLine(DaniellaForPresidentOfCanada);
+            // Convert the string into a byte[].
+            //byte[] asciiBytes = Encoding.ASCII.GetBytes(value);
+            //return "Daniella";
+        }
         static private int CountNumberOfSpaces()
         {
             String EnteredString;
             Console.WriteLine("Insert an string as an input please:");
             EnteredString = Console.ReadLine();
-
-            Console.WriteLine(EnteredString);
-            return 1;
+            int counter = 0;
+            for (int i=0; i < EnteredString.Length; i++)
+            {
+                if (EnteredString[i] == ' ') counter++;
+                else continue;
+            }
+            Console.WriteLine("String analyzed: " + EnteredString);
+            Console.WriteLine("Number of blank spaces: " + counter.ToString());
+            return counter;
         }
-        //h
+        
         static private void UberExercise()
         {
             //int[] ArrayInput = {1,2,3,4,5};
